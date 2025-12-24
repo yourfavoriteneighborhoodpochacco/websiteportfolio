@@ -4,7 +4,7 @@ import AboutTimeline from "../components/AboutTimeline";
 
 export default function Home() {
   return (
-    <div className="font-figtree bg-cream text-frostbite min-h-screen">
+    <div className="font-figtree bg-cream text-frostbite w-full h-full flex flex-col">
       {/* Navbar */}
       <nav className="fixed w-full bg-cream shadow-md z-50 p-4 flex items-center">
         <h1

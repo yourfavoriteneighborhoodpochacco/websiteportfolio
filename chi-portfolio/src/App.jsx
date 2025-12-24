@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <div className="font-figtree bg-cream text-frostbite min-h-screen">
+    <div className="font-figtree bg-cream text-frostbite w-screen min-h-screen overflow-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
