@@ -10,7 +10,7 @@ module.exports = {
         figtree: ["Figtree", "sans-serif"],
       },
       colors: {
-        cream: "#F5F5F5", // example violet color
+        cream: "#F5F5F5", 
         frostbite: "#2F2E2E",
       },
     },
