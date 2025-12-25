@@ -10,11 +10,15 @@ export default function AlbumWheel() {
   };
 
   return (
-    <div className="p-4">
-      {/* Album covers */}
-      <div className="flex gap-8 overflow-x-auto">
+    <div className="w-full flex flex-col gap-12">
+      {/* Album row */}
+      <div className="flex justify-center gap-16 overflow-x-auto overflow-y-hidden py-12">
         {albums.map((album) => (
-          <div key={album.title} onClick={() => handleAlbumClick(album)}>
+          <div
+            key={album.title}
+            onClick={() => handleAlbumClick(album)}
+            className="shrink-0"
+          >
             <AlbumCard album={album} />
           </div>
         ))}
@@ -22,15 +26,15 @@ export default function AlbumWheel() {
 
       {/* Spotify embed */}
       {activeAlbum && (
-        <div className="mt-8 w-full flex justify-center">
+        <div className="w-full flex justify-center pt-8">
           <iframe
-            src={activeAlbum.spotifyUrl}
-            width="100%"   // full width
-            height="380"   // Spotify standard height
+            src={activeAlbum.spotifyPlaylistUrl}
+            width="100%"
+            height="380"
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          />
         </div>
       )}
     </div>

@@ -1,13 +1,16 @@
-// src/pages/About.jsx
+import CADProjectCard from "../components/CADProjectCard";
+import cadProjects from "../data/cadProjects";
+
 export default function CADProjects() {
   return (
-    <div className="min-h-screen bg-cream text-frostbite font-figtree p-8">
-      <h1 className="text-4xl font-bold mb-8">About Page</h1>
+    <div className="min-h-screen w-full p-8 bg-cream text-frostbite">
+      <h1 className="text-3xl font-bold mb-8">CAD Projects</h1>
 
-      {/* Values Section */}
-      <section className="mb-12 border-2 border-dashed border-gray-400 p-4">
-        CAD Placeholder
-      </section>
+      <div className="flex flex-wrap gap-8">
+        {cadProjects.map((project, index) => (
+          <CADProjectCard key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -3,37 +3,40 @@ import CDPlayer from "../components/CDPlayer";
 import AboutTimeline from "../components/AboutTimeline";
 
 export default function Home() {
-  return (
-    <div className="font-figtree bg-cream text-frostbite w-full h-full flex flex-col">
-      {/* Navbar */}
-      <nav className="fixed w-full bg-cream shadow-md z-50 p-4 flex items-center">
-        <h1
-          className="text-xl font-bold cursor-pointer text-frostbite"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          Michael Poniente
-        </h1>
-      </nav>
+    return (
+        <div className="font-figtree bg-cream text-frostbite min-h-screen w-screen overflow-x-hidden">
 
-      <main className="pt-20 px-4">
-        {/* Album Wheel Section */}
-        <section className="mb-16 p-6 rounded-xl border border-frostbite/20 bg-white/20 backdrop-blur-md">
-          <h2 className="text-2xl font-semibold mb-4 text-frostbite">Album Wheel</h2>
-          <AlbumWheel />
-        </section>
+            <main className="pt-20">
+                {/* Album Wheel Section */}
+                <div className="w-full text-center">
+                    <h1 className="font-bold text-5xl mt-4 py-8">
+                        Choose the atmosphere.
+                    </h1>
+                </div>
 
-        {/* CD Player Section */}
-        <section className="mb-16 p-6 rounded-xl border border-frostbite/20 bg-white/20 backdrop-blur-md">
-          <h2 className="text-2xl font-semibold mb-4 text-frostbite">CD Player</h2>
-          <CDPlayer />
-        </section>
+                <section className="w-full min-h-[70vh] pb-18 flex items-center">
+                    <div className="max-w-[1600px] mx-auto px-6 w-full">
+                        <AlbumWheel />
+                    </div>
+                </section>
 
-        {/* About Timeline Section */}
-        <section className="mb-16 p-6 rounded-xl border border-frostbite/20 bg-white/20 backdrop-blur-md">
-          <h2 className="text-2xl font-semibold mb-4 text-frostbite">About Timeline</h2>
-          <AboutTimeline />
-        </section>
-      </main>
-    </div>
-  );
+
+                {/* CD Player Section */}
+                <section className="w-full py-16">
+                    <div className="max-w-[1600px] mx-auto px-6">
+                        <h2 className="text-2xl font-semibold mb-4">CD Player</h2>
+                        <CDPlayer />
+                    </div>
+                </section>
+
+                {/* About Timeline */}
+                <section className="w-full py-16">
+                    <div className="max-w-[1600px] mx-auto px-6">
+                        <h2 className="text-2xl font-semibold mb-4">About Timeline</h2>
+                        <AboutTimeline />
+                    </div>
+                </section>
+            </main>
+        </div>
+    );
 }

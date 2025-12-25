@@ -2,17 +2,22 @@ const albums = [
   {
     title: "The Color Violet",
     cover: "/assets/TheColorVioletAlbumCover.png",
-    spotifyUrl: "https://open.spotify.com/embed/track/3azJifCSqg9fRij2yKIbWz",
+    spotifyPlaylistUrl: "https://open.spotify.com/embed/playlist/2kPFACRhSn4TJCnXe2cndj",
   },
   {
     title: "GO!",
     cover: "/assets/GoAlbumCover.png",
-    spotifyUrl: "https://open.spotify.com/embed/track/6OWWZtNQORY1McaZmOrwhc",
+    spotifyPlaylistUrl: "https://open.spotify.com/embed/playlist/738utWsY3FgWCMUkoectJY",
   },
   {
     title: "universe",
     cover: "/assets/UniverseAlbumCover.jpg",
-    spotifyUrl: "https://open.spotify.com/embed/track/7B4UxdHwRKJYRhvXxmgZhM",
+    spotifyPlaylistUrl: "https://open.spotify.com/embed/playlist/2tH3u5MPf3IwZvxFbqQn78",
+  },
+  {
+    title: "Speed and Love",
+    cover: "/assets/SpeedAndLoveAlbumCover.png",
+    spotifyPlaylistUrl: "https://open.spotify.com/embed/playlist/51aeZjFHMx9GKkxCGzFrj5",
   },
 ];
 

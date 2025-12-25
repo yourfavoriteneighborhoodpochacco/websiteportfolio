@@ -1,13 +1,18 @@
-// src/pages/About.jsx
+import CodingProjectCard from "../components/CodingProjectCard";
+import codingProjects from "../data/codingProjects";
+
 export default function CodingProjects() {
   return (
-    <div className="min-h-screen bg-cream text-frostbite font-figtree p-8">
-      <h1 className="text-4xl font-bold mb-8">About Page</h1>
+    <div className="min-h-screen w-full p-8 bg-cream">
+      <h1 className="text-3xl font-semibold mb-8 text-frostbite">
+        Coding Projects
+      </h1>
 
-      {/* Values Section */}
-      <section className="mb-12 border-2 border-dashed border-gray-400 p-4">
-        Coding Placeholder
-      </section>
+      <div className="flex flex-wrap gap-6">
+        {codingProjects.map((project, index) => (
+          <CodingProjectCard key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 }
