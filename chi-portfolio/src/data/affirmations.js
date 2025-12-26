@@ -4,7 +4,6 @@ const affirmations = [
   { message: "Every day is a new opportunity to grow." },
   { message: "You are stronger than you think." },
   { message: "Your potential is limitless." },
-  // add as many as you want
 ];
 
 export default affirmations;

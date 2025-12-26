@@ -1,4 +1,3 @@
-// src/components/AboutTimeline.jsx
 export default function AboutTimeline() {
   return (
     <div className="flex flex-col gap-8">

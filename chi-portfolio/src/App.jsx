@@ -9,9 +9,8 @@ import ProjectInspiration from "./pages/ProjectInspiration";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="font-figtree bg-cream text-frostbite min-h-screen w-screen overflow-x-hidden">
-        {/* Navbar - static at top of every page */}
-        <nav className="w-full bg-cream p-8 flex items-center">
+      <div className="font-figtree bg-cream text-frostbite min-h-screen w-full overflow-x-hidden">
+        <nav className="bg-cream p-8 flex items-center">
           <h1 className="tracking-widest text-3xl font-bold cursor-pointer">
             <Link to="/" className="text-frostbite no-underline hover:text-frostbite">
               MICHAEL PONIENTE
