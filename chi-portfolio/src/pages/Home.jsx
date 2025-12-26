@@ -19,6 +19,12 @@ export default function Home() {
                     </div>
                 </section>
 
+                <div className="w-full text-center">
+                    <h1 className="font-bold text-5xl mt-4">
+                        Choose your path.
+                    </h1>
+                </div>
+
                 <section className="w-full py-16">
                     <div className="max-w-[1600px] mx-auto px-6">
                         <CDPlayer />
